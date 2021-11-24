@@ -1,0 +1,163 @@
+@charset "utf-8";
+
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		
+		body {
+			font: 0.6em Helvetica, Verdana, sans-serif;
+			background-color: #800000;
+			display: flex;
+			min-height: 100%;
+			margin: 0 auto;
+			flex-wrap: wrap;
+		}
+		
+		main {
+			flex: 1;
+			padding: 2%;
+			text-align: center;
+		}
+		
+		img, h2, p {
+			margin: 1%;
+		}
+		
+		header, footer {
+			clear: both;
+			color: #800000;
+			font-size: 180%;
+			flex-basis: 100%;
+			background-color: white;
+			padding: 1%;
+		}
+		
+		footer {
+			position: relative;
+			bottom: 0;
+			height: 250px;
+			width: 100%;
+		}
+		
+		button {
+			background-color: white;
+			border: none;
+			color: #800000;
+			padding: 2%;
+			margin-top: 5%;
+		}
+		
+		button:hover {
+			color: black;
+		}
+		
+		nav {
+			float: right;
+			margin-right: 5%;
+		}
+		
+		article {
+			float: left;
+			margin-left: 5%;
+			min-width: 400px;
+		}
+		
+		section {
+			float: right;
+			margin-right: 5%;
+		}
+		
+		.imagem {
+			border: thick solid white;
+			height: auto;
+			width: 25%;
+			margin-bottom: 5%;
+		}
+		
+		nav ul {
+			list-style: none;
+			margin: 0 auto;
+			padding: 0;	
+		}
+	
+		nav ul li {
+			display: inline-block;
+		}
+	
+		nav a {
+			color: #800000;
+			display: block;
+			padding: 30px 30px 30px 30px;
+			text-decoration: none;
+		}
+		
+		a:hover {
+			color: black;
+		}
+		
+		a {
+			color: white;
+			text-decoration: none;
+		}
+		
+		div, h2 {
+			margin-bottom: 2.5%;
+			margin-top: 2.5%;
+		}
+		
+		h2 {
+			font-size: 140%;
+		}
+		
+		p {
+			color: white;
+			font-size: 140%;
+			margin-right: 8%;
+			margin-left: 8%;
+		}
+		
+		#cine2 {
+			font-size: 80%;
+			float: left;
+			margin-left: 8%;
+			text-align: center;
+		}
+		
+		#cine3 {
+			font-size: 80%;
+			float: right;
+			margin-right: 8%;
+			text-align: center;
+		}
+		
+		#cine2 div .td-block-span6 {
+			margin-bottom: 0;
+		}
+		
+		#cine3 div .td-block-span6 {
+			margin-bottom: 3%;
+		}
+		
+		.link {
+			margin: 0 auto;
+			padding: 0;
+			color: #800000;
+		}
+		
+		@media all and (max-width: 1280px) {
+			
+			nav, article, section, #cine2, #cine3 {
+				float: none;
+				text-align: center;
+				margin: 0;
+			}
+			
+			nav a {
+				padding: 0 30px 0 30px;
+			
+			}
+	
+		}
+	
